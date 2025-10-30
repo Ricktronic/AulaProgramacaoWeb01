@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // ==================== Menu Mobile ====================
 function toggleMenu() {
 =======
@@ -6,12 +5,9 @@ const { jsxs } = require("react/jsx-runtime");
 
 /*mobile*/
 function toggleMenu(){
->>>>>>> b7c609e2247b6f04e4f8a15fb94d1f0d3355f90b
     const menu = document.getElementById('navMenu');
     menu.classList.toggle('active');
 }
-
-<<<<<<< HEAD
 // ==================== Scroll Suave ====================
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
@@ -23,7 +19,6 @@ function scrollToSection(sectionId) {
     window.scrollTo({ top: sectionPosition, behavior: 'smooth' });
 
     // Fecha o menu mobile após clicar
-=======
 /*scroll leve*/
 function scrollActive(sectionId){
     const section = document.getElementById(sectionId);
@@ -34,13 +29,9 @@ function scrollActive(sectionId){
     const sectionPosition = section.offsetTop - headerHeight;
 
     window.scrollTo({top: sectionPosition, behavior: "smooth"});
-    
->>>>>>> b7c609e2247b6f04e4f8a15fb94d1f0d3355f90b
     const menu = document.getElementById('navMenu');
     menu.classList.remove('active');
 }
-
-<<<<<<< HEAD
 // ==================== Cadastro ====================
 function handleSubmit(event) {
     event.preventDefault();
@@ -87,7 +78,6 @@ function handleSubmit(event) {
     // Atualiza a tabela de voluntários
     exibirVoluntarios();
 }
-
 // ==================== Exibir Voluntários ====================
 function exibirVoluntarios() {
     const voluntarios = JSON.parse(localStorage.getItem('voluntarios') || '[]');
@@ -210,4 +200,3 @@ function exibirVoluntarios(){
         tabelaContainer.innerHTML = '<p>Nenhum voluntario cadstrado</p>';
     }
 }
->>>>>>> b7c609e2247b6f04e4f8a15fb94d1f0d3355f90b
